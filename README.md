@@ -1,1 +1,0 @@
-# projeto-gerenciamento-de-afazeres
