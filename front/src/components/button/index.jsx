@@ -1,8 +1,11 @@
 import React from 'react'
+import { Botao, ButtonContainer } from './styled'
 
 const Button = () => {
   return (
-    <div>index</div>
+    <ButtonContainer>
+      <Botao />
+    </ButtonContainer>
   )
 }
 

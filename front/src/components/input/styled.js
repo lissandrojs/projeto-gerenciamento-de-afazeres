@@ -5,6 +5,9 @@ export const InputContainer = styled.div`
     max-width: 250px;
     height: 30px;
     border-bottom: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+    ṕadding: 10px;
 
     display: flex;
     align-itens: center;
@@ -13,7 +16,6 @@ export const InputContainer = styled.div`
 
 export const InputText = styled.input`
     background-color: light-gray;
-    color: #FFFF;
     border: 0;
     height: 30px;
     width: 100%;

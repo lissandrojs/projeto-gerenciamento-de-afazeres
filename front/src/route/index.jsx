@@ -1,12 +1,12 @@
 import { createBrowserRouter } from 'react-router-dom'
-import App from '../App';
-
+import Register from '../register';
 
 const RouterApp = createBrowserRouter([
     {
         path: '/',
-        element: <App />
+        element: <Register/>
     },
+
 ]);
 
 export default RouterApp

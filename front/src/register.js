@@ -1,14 +1,17 @@
 import { Layout } from "./components/layout";
 import GlobalStyle from "./styles/global" ;
 import { Input } from "./components/input";
+import { Button } from "./components/button";
 
-function App() {
+function Register() {
   return (<>
-    <Layout>
-      <Input />
-    </Layout>
+    <Layout />
+    <Input />
+    <Input />
+    <Input />
+    <Button />
     <GlobalStyle />
     </>);
 }
 
-export default App;
+export default Register;
