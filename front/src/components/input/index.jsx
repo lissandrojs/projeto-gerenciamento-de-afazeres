@@ -1,7 +1,7 @@
 import React from 'react'
 import { InputContainer, InputText } from './styled'
 
-const Input = () => {
+const Input = ({...rest}) => {
   return (
     <InputContainer>
         <InputText />
