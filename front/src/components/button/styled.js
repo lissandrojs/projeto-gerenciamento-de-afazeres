@@ -11,7 +11,9 @@ export const Botao = styled.button`
     height: 50px;
     border-radius: 10px;
     color: white;
-    background-color: black;
+    background: linear-gradient(to right, #8432FC 0%, #5039E6 34.48%, #274CFC 100%);
+    margin: 20px;
+    border: 0;
 
     &&:hover{
         opacity:0.33;

@@ -6,12 +6,12 @@ export const InputContainer = styled.div`
     height: 30px;
     border-bottom: 2px solid black;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 5px;
 
     display: flex;
     align-itens: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 `
 
 export const InputText = styled.input`
