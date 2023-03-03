@@ -3,7 +3,7 @@ import  background  from "../../assets/bg.png"
 
 export const Container = styled.div`
     width: 100%;
-    height: 100%;
+    height: 98vh;
 
     display: flex;
     justify-content: flex-end;
@@ -26,9 +26,8 @@ export const Titulo = styled.h1`
 
 export const FormContainer = styled.div`
     width: 300px;
-    height: 100%;
     margin: 30px;
-    margin-top: 100px;
+    margin-top: 10px;
     background-color: #fff;
     border-radius: 5px;
 

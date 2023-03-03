@@ -13,6 +13,8 @@ function Register() {
         <Input />
         <Input />
         <Input />
+        <Input />
+        <Input />
         <Button />
       </FormContainer>
     </Container>

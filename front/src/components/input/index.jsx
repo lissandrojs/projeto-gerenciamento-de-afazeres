@@ -3,7 +3,7 @@ import { InputContainer, InputText } from './styled'
 
 const Input = ({...rest}) => {
   return (
-    <InputContainer>
+    <InputContainer >
         <InputText />
     </InputContainer>
   )

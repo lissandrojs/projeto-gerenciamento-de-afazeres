@@ -16,6 +16,6 @@ export const Botao = styled.button`
     border: 0;
 
     &&:hover{
-        opacity:0.33;
+        opacity:0.7;
     }
 `

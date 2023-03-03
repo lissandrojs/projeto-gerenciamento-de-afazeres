@@ -11,10 +11,12 @@ export const Header = styled.header`
 export const Logo = styled.h1`
     font-size: 18px;
     font-weight: 700;
-    color: #bbb
+    color: #fff;
+    padding: 5px;
     
-`
-
-export const Footer = styled.footer`
-
+    &:hover{
+        opacity:0.5;
+        cursor: pointer;
+    }
+   
 `
