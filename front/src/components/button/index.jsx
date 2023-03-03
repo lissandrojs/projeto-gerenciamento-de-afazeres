@@ -1,10 +1,10 @@
 import React from 'react'
 import { Botao, ButtonContainer } from './styled'
 
-const Button = () => {
+const Button = ({title}) => {
   return (
     <ButtonContainer>
-      <Botao />
+      <Botao>{title}</Botao>
     </ButtonContainer>
   )
 }

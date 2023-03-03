@@ -13,6 +13,11 @@ export const InputContainer = styled.div`
     align-itens: center;
     margin-bottom: 10px;
 `
+export const ErrorText = styled.p`
+    color: #ff0000
+    font-size: 10px;
+    margin: auto
+`
 
 export const InputText = styled.input`
     background-color: light-gray;
