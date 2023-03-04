@@ -34,9 +34,9 @@ function Register() {
       <FormContainer>
         <Titulo>Cadastrar</Titulo>
         <form onSubmit={handleSubmit(onSubmit)}>
-        <Input control={control} errorMessage={errors.nome.message} name="nome" placeholder="Nome Completo" type="text"/>
-        <Input control={control} errorMessage={errors.email.message} name="email" placeholder="E-mail" type="email"/>
-        <Input control={control} errorMessage={errors.password.message} name="password" placeholder="Senha" type="password"/>
+        <Input control={control} name="nome" placeholder="Nome Completo" type="text"/>
+        <Input control={control} name="email" placeholder="E-mail" type="email"/>
+        <Input control={control} name="password" placeholder="Senha" type="password"/>
         <Input control={control} name="dataNascimento" type="date"/>
         <Input control={control} name="userName" placeholder="Nome de Usuario" type="text"/>
         <Button title="Cadastrar" type='submit'/>
