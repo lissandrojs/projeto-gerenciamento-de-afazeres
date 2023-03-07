@@ -34,3 +34,10 @@ export const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
 `
+export const JaPossui = styled.p`
+    font-size: 12px;
+    font-weight: 400;
+    font-family:sans-serif;
+    margin: auto;
+    margin-bottom: 5px;
+`
