@@ -1,12 +1,12 @@
 import React from 'react'
-import { Botao, ButtonContainer } from './styled'
+import { BtnSubmit, ButtonContainer } from './styled'
 
 const Button = ({title}) => {
-  return (
+  return (<>
     <ButtonContainer>
-      <Botao>{title}</Botao>
+      <BtnSubmit> {title} </BtnSubmit>
     </ButtonContainer>
-  )
+    </>)
 }
 
 export {Button}

@@ -6,7 +6,7 @@ export const ButtonContainer = styled.div`
     justify-content: center;
     align-items: center;
 `
-export const Botao = styled.button`
+export const BtnSubmit = styled.button`
     width: 300px;
     height: 50px;
     border-radius: 10px;

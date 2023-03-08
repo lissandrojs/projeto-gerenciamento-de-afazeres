@@ -2,7 +2,7 @@ import { Layout } from "../../components/layout";
 import GlobalStyle from "../../styles/global" ;
 import { Input } from "../../components/input";
 import { Button } from "../../components/button";
-import { Container, FormContainer, JaPossui, Titulo } from "./style";
+import { Container, FormContainer, JaPossui, Titulo } from "./styled";
 import {MdEmail, MdLock, MdAccountBox, MdAccountCircle} from 'react-icons/md'
 
 import { useForm } from "react-hook-form";
