@@ -5,7 +5,7 @@ export const Header = styled.header`
     height: 50px;
     background-color: #000;
     display: flex;
-    aling-items: center;
+    align-items: center;
 `
 export const Logo = styled.div`
     font-size: 18px;

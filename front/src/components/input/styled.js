@@ -10,7 +10,7 @@ export const InputContainer = styled.div`
     padding: 5px;
 
     display: flex;
-    align-itens: center;
+    align-items: center;
     margin-bottom: 10px;
 `
 export const ErrorText = styled.p`
