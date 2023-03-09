@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import  background  from "../../assets/bg.png"
 
+
 export const Container = styled.div`
     width: 100%;
     height: 98vh;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     background-image: url(${background});
     background-repeat: no-repeat;
@@ -22,6 +23,15 @@ export const Titulo = styled.h1`
     margin: auto;
     font-family: sans-serif;
     margin-top: 20px;
+`
+
+export const AstroContainer = styled.div`
+    display:flex;
+    flex-direction: column;
+    img{
+        width: 700px;
+    }
+    width: 60%;
 `
 
 export const FormContainer = styled.div`
