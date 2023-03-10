@@ -32,22 +32,24 @@ function Register() {
   const onSubmit = data => console.log(data);
 
 
+
   return (<>
     <Layout />
     <Container>
       <AstroContainer>
-       
+        <h1>Nao fique no mundo da lua</h1>
+        <h2>Utilize nosso Gerenciador para organizar suas tarefas</h2>
         <img src={bannerImage} alt='baner'></img>
       </AstroContainer>
       <FormContainer>
         <Titulo>Cadastrar</Titulo>
         <form onSubmit={handleSubmit(onSubmit)}>
-        <Input control={control} name="nome"  placeholder="Nome Completo" type="text" leftIcon={<MdAccountBox />}/>
-        <Input control={control} name="email"  placeholder="E-mail" type="email" leftIcon={<MdEmail />}/>
-        <Input control={control} name="password" placeholder="Senha" type="password" leftIcon={<MdLock />}/>
+        <Input control={control} name="nome" errorMessage={errors.nome?.message} placeholder="Nome Completo" type="text" leftIcon={<MdAccountBox />}/>
+        <Input control={control} name="email" errorMessage={errors.email?.message} placeholder="E-mail" type="email" leftIcon={<MdEmail />}/>
+        <Input control={control} name="password" errorMessage={errors.password?.message} placeholder="Senha" type="password" leftIcon={<MdLock />}/>
         <Input control={control} name="confirmPassword" placeholder="Confirmar Senha" type="password" leftIcon={<MdLock />}/>
         <Input control={control} name="dataNascimento" type="date"/>
-        <Input control={control} name="userName"  placeholder="Nome de Usuario" type="text" leftIcon={<MdAccountCircle />}/>
+        <Input control={control} name="userName" errorMessage={errors.userName?.message} placeholder="Nome de Usuario" type="text" leftIcon={<MdAccountCircle />}/>
         <Button title="Cadastrar" type='submit'/>
         </form>
         <JaPossui> Ja possui uma conta? clique <a href={<Login />}> aqui!</a></JaPossui>

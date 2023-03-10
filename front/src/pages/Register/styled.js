@@ -28,15 +28,18 @@ export const Titulo = styled.h1`
 export const AstroContainer = styled.div`
     display:flex;
     flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#FFF;
+    font-size: 20px;
     img{
-        width: 700px;
+        width: 500px;
     }
     width: 60%;
 `
 
 export const FormContainer = styled.div`
     width: 300px;
-    margin: 30px;
+    margin: 20px;
     margin-top: 10px;
     background-color: #fff;
     border-radius: 5px;
