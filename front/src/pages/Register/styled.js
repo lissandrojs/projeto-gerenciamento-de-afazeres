@@ -4,15 +4,24 @@ import  background  from "../../assets/bg.png"
 
 export const Container = styled.div`
     width: 100%;
+    min-width: 852px;
     height: 98vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    
     background-image: url(${background});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
+    @media (max-width: 852px){
+        display:flex;
+        flex-direction: column;
+        margin: auto;
+        height: 100%;
+    }
 
 `
 
@@ -35,6 +44,10 @@ export const AstroContainer = styled.div`
         width: 500px;
     }
     width: 60%;
+    
+    @media (max-width: 852px){
+        margin-top: 100px;
+    }
 `
 
 export const FormContainer = styled.div`
@@ -46,6 +59,10 @@ export const FormContainer = styled.div`
 
     display: flex;
     flex-direction: column;
+    
+    @media (max-width: 852px){
+        margin-bottom: 50px;
+    }
 `
 export const JaPossui = styled.p`
     font-size: 12px;
