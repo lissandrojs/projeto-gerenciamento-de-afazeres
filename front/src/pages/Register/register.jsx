@@ -18,6 +18,7 @@ const schema = yup.object({
   nome: yup.string().required('Campo obrigatorio'),
   email: yup.string().email('email não é valido').required('Campo obrigatorio'),
   password: yup.string().min(8, 'No minimo 8 caracteres').required('Campo obrigatorio'),
+  confirmedPassword: yup.string().required("Senhas diferentes").oneOf([yup.ref("password")], "Senhas desiguais"),
   userName: yup.string().required('Campo obrigatorio'),
 }).required();
 
@@ -48,7 +49,7 @@ function Register() {
         <CustomInputComponent control={control} name="nome" errorMessage={errors.nome?.message} placeholder="Nome Completo" type="text" leftIcon={<MdAccountBox />}/>
         <CustomInputComponent control={control} name="email" errorMessage={errors.email?.message} placeholder="E-mail" type="email" leftIcon={<MdEmail />}/>
         <CustomInputComponent control={control} name="password" errorMessage={errors.password?.message} placeholder="Senha" type="password" leftIcon={<MdLock />}/>
-        <CustomInputComponent control={control} name="confirmPassword" placeholder="Confirmar Senha" type="password" leftIcon={<MdLock />}/>
+        <CustomInputComponent control={control} name="confirmedPassword" errorMessage={errors.confirmedPassword?.message} placeholder="Confirmar Senha" type="password" leftIcon={<MdLock />}/>
         <CustomInputComponent control={control} name="dataNascimento" type="date"/>
         <CustomInputComponent control={control} name="userName" errorMessage={errors.userName?.message} placeholder="Nome de Usuario" type="text" leftIcon={<MdAccountCircle />}/>
         <ButtonComponent title="Cadastrar" type='submit'/>
