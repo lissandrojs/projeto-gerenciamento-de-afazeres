@@ -1,8 +1,8 @@
 import React from 'react'
 import {  Controller } from "react-hook-form";
-import { ErrorText, IconContainer, InputContainer, InputText } from './styled'
+import { ErrorText, IconContainer, InputContainer, InputText } from './styled.jsx'
 
-const Input = ({leftIcon, control, name,errorMessage, ...rest}) => {
+const CustomInputComponent = ({leftIcon, control, name,errorMessage, ...rest}) => {
   return (<>
     <InputContainer >
     {leftIcon ? (<IconContainer>{leftIcon}</IconContainer>) : null}
@@ -17,4 +17,4 @@ const Input = ({leftIcon, control, name,errorMessage, ...rest}) => {
   </>)
 }
 
-export {Input}
+export {CustomInputComponent}

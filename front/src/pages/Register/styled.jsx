@@ -4,7 +4,6 @@ import  background  from "../../assets/bg.png"
 
 export const Container = styled.div`
     width: 100%;
-    min-width: 852px;
     height: 98vh;
 
     display: flex;
@@ -21,6 +20,7 @@ export const Container = styled.div`
         flex-direction: column;
         margin: auto;
         height: 100%;
+        width: 100%;
     }
 
 `
@@ -43,10 +43,13 @@ export const AstroContainer = styled.div`
     img{
         width: 500px;
     }
-    width: 60%;
     
     @media (max-width: 852px){
         margin-top: 100px;
+        img{
+        width: 324px;
+        margin: 0 auto;
+        }
     }
 `
 

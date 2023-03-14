@@ -1,8 +1,8 @@
 import React from "react";
-import { Header, Logo } from "./styled";
+import { Header, Logo } from "./styled.jsx";
 import logoImg from "../../assets/logo.png"
 
-const Layout = () => {
+const HeaderComponent = () => {
     return (
         <Header>
             <img src={logoImg} alt=""/>
@@ -11,4 +11,4 @@ const Layout = () => {
     )
 }
 
-export { Layout }
+export { HeaderComponent }

@@ -1,7 +1,7 @@
 import React from 'react'
-import { BtnSubmit, ButtonContainer } from './styled'
+import { BtnSubmit, ButtonContainer } from './styled.jsx'
 
-const Button = ({title}) => {
+const ButtonComponent = ({title}) => {
   return (<>
     <ButtonContainer>
       <BtnSubmit> {title} </BtnSubmit>
@@ -9,4 +9,4 @@ const Button = ({title}) => {
     </>)
 }
 
-export {Button}
+export {ButtonComponent}

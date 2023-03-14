@@ -1,8 +1,8 @@
-import { Layout } from "../../components/layout";
+
 import GlobalStyle from "../../styles/global" ;
-import { Input } from "../../components/input";
-import { Button } from "../../components/button";
-import { AstroContainer, Container, FormContainer, JaPossui, Titulo } from "./styled";
+import { CustomInputComponent } from "../../components/CustomInputComponent";
+import { ButtonComponent } from "../../components/ButtonComponent";
+import { AstroContainer, Container, FormContainer, JaPossui, Titulo } from "./styled.jsx";
 import {MdEmail, MdLock, MdAccountBox, MdAccountCircle} from 'react-icons/md'
 import bannerImage from "../../assets/banner.png";
 
@@ -11,6 +11,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 import Login from "../Login/login";
+import LayoutBasePageComponent from "../../components/Layout";
 
 
 const schema = yup.object({
@@ -33,8 +34,8 @@ function Register() {
 
 
 
-  return (<>
-    <Layout />
+  return (
+    <LayoutBasePageComponent>
     <Container>
       <AstroContainer>
         <h1>Nao fique no mundo da lua</h1>
@@ -44,19 +45,20 @@ function Register() {
       <FormContainer>
         <Titulo>Cadastrar</Titulo>
         <form onSubmit={handleSubmit(onSubmit)}>
-        <Input control={control} name="nome" errorMessage={errors.nome?.message} placeholder="Nome Completo" type="text" leftIcon={<MdAccountBox />}/>
-        <Input control={control} name="email" errorMessage={errors.email?.message} placeholder="E-mail" type="email" leftIcon={<MdEmail />}/>
-        <Input control={control} name="password" errorMessage={errors.password?.message} placeholder="Senha" type="password" leftIcon={<MdLock />}/>
-        <Input control={control} name="confirmPassword" placeholder="Confirmar Senha" type="password" leftIcon={<MdLock />}/>
-        <Input control={control} name="dataNascimento" type="date"/>
-        <Input control={control} name="userName" errorMessage={errors.userName?.message} placeholder="Nome de Usuario" type="text" leftIcon={<MdAccountCircle />}/>
-        <Button title="Cadastrar" type='submit'/>
+        <CustomInputComponent control={control} name="nome" errorMessage={errors.nome?.message} placeholder="Nome Completo" type="text" leftIcon={<MdAccountBox />}/>
+        <CustomInputComponent control={control} name="email" errorMessage={errors.email?.message} placeholder="E-mail" type="email" leftIcon={<MdEmail />}/>
+        <CustomInputComponent control={control} name="password" errorMessage={errors.password?.message} placeholder="Senha" type="password" leftIcon={<MdLock />}/>
+        <CustomInputComponent control={control} name="confirmPassword" placeholder="Confirmar Senha" type="password" leftIcon={<MdLock />}/>
+        <CustomInputComponent control={control} name="dataNascimento" type="date"/>
+        <CustomInputComponent control={control} name="userName" errorMessage={errors.userName?.message} placeholder="Nome de Usuario" type="text" leftIcon={<MdAccountCircle />}/>
+        <ButtonComponent title="Cadastrar" type='submit'/>
         </form>
         <JaPossui> Ja possui uma conta? clique <a href={<Login />}> aqui!</a></JaPossui>
       </FormContainer>
     </Container>
     <GlobalStyle />
-    </>);
+    </LayoutBasePageComponent>
+    );
 }
 
 export default Register;
